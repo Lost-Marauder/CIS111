@@ -15,7 +15,6 @@ body {
   border: 2px solid black;
   margin: 0 auto;
   box-shadow: 5px 5px 5px black;
-
 }  
 
 #header {
@@ -39,20 +38,25 @@ header h2, header h3 {
   text-indent: 25px;
 }
 
-h2 {
-  font-size: 150%;
+nav {
+  width: 160px;
+  float: left;
+  margin-top: .5em;
 }
 
-header h3 {
-  font-size: 150%;
+li {
+  margin-left: 2.5em;
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
-
-main {
-  margin: 2.5em;
+  
+a {
+  font-weight: bold;
+  color: orange;
 }
-
-main p {
-  margin: .5em;
+  
+a:hover, li a:focus {
+  color: green;
 }
 
 h1 {
@@ -63,21 +67,28 @@ h1::first-letter {
   font-size: 200%;
 }
 
-li {
-  margin-left: 2.5em;
-  margin-right: .5em;
-  margin-top: .5em;
-  margin-bottom: .5em;
+h2 {
+  font-size: 150%;
 }
-  
-li a {
-  font-weight: bold;
-  color: orange;
+
+header h3 {
+  font-size: 150%;
 }
-  
-  
-li a:hover, li a:focus {
-  color: green;
+
+section {
+  margin-left: 160px;
+  margin-top: 1em;
+  margin-bottom: 2.5em;
+  margin-right: 2.5em;
+}
+
+section p {
+  margin: .5em;
+}
+
+#cat {
+  max-height: 25%;
+  max-width: 25%;
 }
 
 footer {
@@ -90,4 +101,5 @@ footer {
   background-image: -o-linear-gradient(45deg, black 0%, orange 75%, white 100%);
   background-image: -moz-linear-gradient(45deg, black 0%, orange 75%, white 100%);
   padding: 1em;
+  float: clear;
 }
