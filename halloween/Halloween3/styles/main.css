@@ -102,5 +102,5 @@ footer {
   background-image: -o-linear-gradient(45deg, black 0%, orange 75%, white 100%);
   background-image: -moz-linear-gradient(45deg, black 0%, orange 75%, white 100%);
   padding: 1em;
-  float: clear;
+  clear: both;
 }
