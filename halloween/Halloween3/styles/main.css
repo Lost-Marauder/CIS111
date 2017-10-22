@@ -38,27 +38,76 @@ header h2, header h3 {
   text-indent: 25px;
 }
 
-nav {
-  width: 160px;
-  float: left;
-  margin-top: .5em;
+
+nav ul {
+  list-style-type: none;
+  position: relative;
 }
 
-li {
-  margin-left: 2.5em;
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  text-align: center;
+  width: 160px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 1em 0;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+  background-color: grey;
+}
+
+#current {
+  color: orange;
+}
+
+nav ul li:hover > #within {
+  display: block;
+}
+
+#within {
+  display: none;
+  position: absolute;
+}
+
+#within li {
+  float: none;
+}
+
+aside {
+  width: 144px;
+  float: left;
+  margin: .5em;
+}
+
+aside ul {
+  list-style-type: none;
+  width: 144px;
+  
+}
+
+aside li {
   margin-top: .5em;
   margin-bottom: .5em;
 }
-  
-a {
+ 
+aside li a {
+  display: block;
+  background-color: orange;
+  color: black;
+  border: 2px solid black;
+  text-decoration: none;
+  text-align: center;
   font-weight: bold;
-  color: orange;
+  padding: .5em 0 .5em .25em;
+  max-width: 100px;
 }
-  
-a:hover, li a:focus {
-  color: green;
-}
-
+ 
 h1 {
   font-size: 200%;
 }
@@ -77,14 +126,23 @@ header h3 {
 
 section {
   margin-left: 160px;
-  margin-top: 1em;
   margin-bottom: 2.5em;
   margin-right: 2.5em;
+  margin-top: -21px;
   min-height: 200px;
 }
 
 section p {
   margin: .5em;
+}
+
+section a {
+  font-weight: bold;
+  color: orange;
+}
+
+section a:hover, section a:focus {
+  color: green;
 }
 
 #cat {
