@@ -17,14 +17,30 @@
   </header>
 
   <main>
-    <nav>
+   <nav>
+    <ul>
+        <li><a id="current" href="index.html">Home</a></li>
+        <li><a href="products/list.html">Product List</a></li>
+        <li><a href="products/personal.html">Personal</a></li>
+        <li><a href="products/ideas.html">Decorating Ideas</a>
+          <ul id="within">
+            <li><a href="products/ideas/outdoor.html">Outdoor</a></li>
+            <li><a href="products/ideas/indoor.html">Indoor</a></li>
+            <li><a href="products/ideas/table.html">Table</a></li>
+            <li><a href="products/ideas/treats.html">Treats</a></li>
+          </ul>
+        </li>
+        <li><a href="products/join.html">Join Email</a></li>
+      </ul>
+    </nav>
+    <aside>
       <ul>
         <li><a href="props.html">Props</a></li>
         <li><a href="costumes.html">Costumes</a></li>
-        <li><a href="special.html">Special Effects</a></li>
+        <li><a href="special.html">Special FX</a></li>
         <li><a href="masks.html">Masks</a></li>
       </ul>
-    </nav>
+    </aside>
     <section>
       <p> This is a test page for masks.  
       <a href="../index.html">Return to the homepage</a>. 
