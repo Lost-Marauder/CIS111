@@ -5,21 +5,25 @@
 	<meta charset="utf-8" />
 	<title>Halloween Store</title>
   <link rel="stylesheet" href="../styles/normalize.css">
-  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/products.css">
+  <link rel="shortcut icon" href="../images/favicon.ico">
+  
 </head>
 
 <body>
-
+  <map name="pumpkinmap">
+    <area shape="circle" coords="42.5,39,42" href="../index.html" alt="Homepage" />
+  </map>
   <header>
-  	<img src="../images/pumpkin.gif" alt="Pumpkin" width="85">
+  	<img src="../images/pumpkin.gif" alt="Pumpkin" width="85" usemap="#pumpkinmap" />
     <h2 id="header">The Halloween Store</h2>
     <h3>For the little Goblin in all of us!</h3>
   </header>
 
   <main>
-   <nav>
+   <nav id="nav_menu">
     <ul>
-        <li><a id="current" href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="products/list.html">Product List</a></li>
         <li><a href="products/personal.html">Personal</a></li>
         <li><a href="products/ideas.html">Decorating Ideas</a>
@@ -33,7 +37,7 @@
         <li><a href="products/join.html">Join Email</a></li>
       </ul>
     </nav>
-    <aside>
+    <aside id="leftnav">
       <ul>
         <li><a href="props.html">Props</a></li>
         <li><a href="costumes.html">Costumes</a></li>
@@ -41,10 +45,31 @@
         <li><a href="masks.html">Masks</a></li>
       </ul>
     </aside>
+    <aside id="rightnav">
+      <h3>Similar Products:</h3>
+      <ul>
+        <li>
+          <figure>
+            <img src="../images/flying_bats.jpg" alt="Flying Bats" />
+            <figcaption><a href="bats.html">Flying bats</a></figcaption>
+        </li>
+        <li>
+          <figure>
+            <img src="../images/rats1.jpg" alt="16 inch Ugly Rat" />
+            <figcaption><a href="rats.html">16" Ugly Rat</a></figcaption>
+        </li>
+        <li>
+          <figure>
+            <img src="../images/strobe1.jpg" alt="Mini strobe light" />
+            <figcaption><a href="strobe.html">Mini strobe light</a></figcaption>
+        </li>
+    </aside>
     <section>
-      <p> This is a test page for cats.  
-      <a href="../index.html">Return to the homepage</a>. 
-      </p>
+      <h2>20" Deranged Cat</h2>
+      <img id="cat" src="../images/cat1.jpg" alt="Grumpy Cat" />
+      <p> This cat provides its own opinion on your life choices and is perfect for affirming your midlife crisis.
+      <br/>
+      <strong>Price:</strong> 123.45</p>
     </section>
   </main>
      

@@ -7,6 +7,7 @@
 	<title>Halloween Store</title>
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/main_rwd.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
   <link rel="stylesheet" href="styles/slicknav.css">
   <script src="https://code.jquery.com/jquery-2.1.3.min.js">
   </script>
@@ -21,8 +22,11 @@
 
 <body>
 
+  <map name="pumpkinmap">
+    <area shape="circle" coords="42.5,39,42" href="index.html" alt="Homepage" />
+  </map>
   <header>
-  	<img src="images/pumpkin.gif" alt="Pumpkin" width="85">
+  	<img src="images/pumpkin.gif" alt="Pumpkin" width="85" usemap="#pumpkinmap" />
     <h2 id="header">The Halloween Store</h2>
     <h3>For the little Goblin in all of us!</h3>
   </header>
